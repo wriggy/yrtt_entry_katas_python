@@ -6,4 +6,5 @@
 # Good luck!
 
 def repeats(arr):
-    return
+# calculate sum of numbers occurring only once in arr
+    return sum([n for n in arr if arr.count(n)==1])

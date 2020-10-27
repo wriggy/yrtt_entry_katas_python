@@ -22,4 +22,7 @@
 # The first element 80 is the total weight of team 1, and the second element 0 is the total weight of team 2.
 
 def row_weights(array):
-    return
+# return array of sums of odd numbered (1st,3rd,5th...) elements and even numbered elements
+    odd = array[::2]
+    even = array[1::2]
+    return [sum(odd), sum(even)]

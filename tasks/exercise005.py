@@ -19,4 +19,11 @@
 # wave("hello") => ["Hello", "hEllo", "heLlo", "helLo", "hellO"]
 
 def wave(people):
-    return
+# return array where each element is the input string with the next letter in turn capitalised
+    arr=[]
+    for ix, c in enumerate(people):
+        chars = [c for c in people]
+        if chars[ix].isalpha() : 
+            chars[ix] = chars[ix].upper()
+            arr.append(''.join(chars))
+    return arr
